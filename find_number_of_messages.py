@@ -10,18 +10,9 @@ def find_number_of_messages(data: dict)->int:
         int: Total number of messages.
     
     """
-    a = []
-    for d in data['messages']:
-        aa = d.get('actor', False)
-        if a:
-            if aa not in a:
-                a.append(aa)
-        aa = d.get('from', False)
-        if aa:
-            if aa not in a:
-                a.append(aa)
+   
             
-    return (a)
+    return len(data['messages'])
 
 
     
