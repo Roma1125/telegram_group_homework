@@ -11,7 +11,7 @@ def find_number_of_messages(data: dict)->int:
     
     """
    
-            
+               
     return len(data['messages'])
 
 
